@@ -3,8 +3,8 @@ This is a collection of solutions for the advent of code 2023
 problems, written in Java. For further information on aoc2023
 read [here](https://adventofcode.com/2023/about).
 
-- [Day 1](#)
-- [Day 2](#)
+- [Day 1](DayOne)
+- [Day 2](DayTwo)
 - [Day 3](#)
 - [Day 4](#)
 - [Day 5](#)
