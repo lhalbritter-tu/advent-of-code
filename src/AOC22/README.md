@@ -1,0 +1,30 @@
+## Advent of Code 2022 - solutions
+This is a collection of solutions for the advent of code 2022
+problems, written in Java. For further information on aoc2022
+read [here](https://adventofcode.com/2022/about).
+
+- [Day 1](DayOneChallenge)
+- [Day 2](DayTwoChallenge)
+- [Day 3](DayThreeChallenge)
+- [Day 4](DayFourChallenge)
+- [Day 5](DayFiveChallenge)
+- [Day 6](DaySixChallenge)
+- [Day 7](DaySevenChallenge)
+- [Day 8](DayEightChallenge)
+- [Day 9](DayNineChallenge)
+- [Day 10](DayTenChallenge)
+- [Day 11](DayElevenChallenge)
+- [Day 12](DayTwelveChallenge)
+- [Day 13](DayThirteenChallenge)
+- [Day 14](DayFourteenChallenge)
+- [Day 15](#)
+- [Day 16](#)
+- [Day 17](#)
+- [Day 18](#)
+- [Day 19](#)
+- [Day 20](#)
+- [Day 21](#)
+- [Day 22](#)
+- [Day 23](#)
+- [Day 24](#)
+- [Day 25](#)
