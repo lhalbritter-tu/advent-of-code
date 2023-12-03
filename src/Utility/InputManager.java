@@ -262,4 +262,17 @@ public class InputManager {
         }
         return lines;
     }
+
+    public List<List<String>> get2D(String input) {
+        List<List<String>> lines = new ArrayList<>();
+        for (String line : input.split("\n")) {
+            lines.add(new ArrayList<>());
+            for (int i = 0; i < line.length(); i++) {
+                char c = line.charAt(i);
+                lines.get(lines.size() - 1).add("" + c);
+            }
+        }
+
+        return lines;
+    }
 }
