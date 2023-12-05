@@ -4,6 +4,7 @@ import AOC23.DayOne.Objects.Calibration;
 import Utility.InputManager;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Puzzle {
@@ -17,6 +18,8 @@ public class Puzzle {
         "zoneight234\n" +
         "7pqrstsixteen").split("\n"));
 
-    System.out.println("The calibration for the document is " + Calibration.parse(input));
+    List<String> frido = Arrays.stream(InputManager.INSTANCE.getFile(InputManager.DEFAULT_INPUT_PATH + "\\resources\\input\\message.txt")).toList();
+
+    System.out.println("The calibration for the document is " + Calibration.parse(frido));
   }
 }
