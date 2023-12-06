@@ -30,26 +30,7 @@ public class Puzzle {
 
         long marginError = 1;
         for (BoatRace race : races) {
-            race.predict();
-            long lastDistance = race.reachedDistance();
-            while (race.isFastEnough()) {
-                race.decelerate();
-            }
-
-            while (!race.isFastEnough()) {
-                race.accelerate();
-                if (lastDistance > race.reachedDistance()) {
-                    race.setAcceleration(0);
-                }
-                lastDistance = race.reachedDistance();
-            }
-
-            long wins = 0;
-            while (race.isFastEnough()) {
-                race.accelerate();
-                wins++;
-            }
-            System.out.println(race + " has " + wins + " wins.");
+            long wins = determineWins(race);
             marginError *= wins;
         }
 
@@ -60,6 +41,13 @@ public class Puzzle {
         System.out.println(race);
 
         marginError = 1;
+        long wins = determineWins(race);
+        marginError *= wins;
+
+        System.out.println("I have a margin of error of " + marginError);
+    }
+
+    public static long determineWins(BoatRace race) {
         race.predict();
         long lastDistance = race.reachedDistance();
         while (race.isFastEnough()) {
@@ -80,8 +68,6 @@ public class Puzzle {
             wins++;
         }
         System.out.println(race + " has " + wins + " wins.");
-        marginError *= wins;
-
-        System.out.println("I have a margin of error of " + marginError);
+        return wins;
     }
 }
