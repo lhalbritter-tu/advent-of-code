@@ -10,8 +10,8 @@ import java.util.List;
 public class PuzzleTen {
     public static void main(String[] args) {
         List<String> commands =
-                //InputManager.INSTANCE.getAdventOfCodeInput(10, 2022);
-                List.of(InputManager.INSTANCE.getFile(InputManager.DEFAULT_INPUT_PATH + "/resources/input/dayten_example"));
+                InputManager.INSTANCE.getAdventOfCodeInput(10, 2022);
+                //List.of(InputManager.INSTANCE.getFile(InputManager.DEFAULT_INPUT_PATH + "/resources/input/dayten_example"));
         List<CPUCommand> comms = new ArrayList<>();
         CPU cpu = new CPU();
 
