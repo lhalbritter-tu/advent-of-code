@@ -66,7 +66,11 @@ public class Position implements Comparable<Position> {
         return (this.x() - position.x()) + (this.y() - position.y());
     }
 
-    public int distance(Position position) {
-        return Math.abs(this.x() - position.x()) + Math.abs(this.y() - position.y());
+    public double distance(Position position) {
+        return new Position(position.x() - this.x(), position.y() - this.y()).length();
+    }
+
+    public double length() {
+        return Math.sqrt(this.x() * this.x() + this.y() * this.y());
     }
 }
