@@ -179,6 +179,12 @@ public class InputManager {
         return this.getWeb2D(AOC_DEFAULT_URL.replace("?", "" + day).replace("*", "" + year));
     }
 
+    public String getAdventOfCodeInput1D(int day, int year) {
+        return String.join("\n",
+                this.getWeb(AOC_DEFAULT_URL.replace("?", "" + day).replace("*", "" + year))
+        );
+    }
+
     private String[] getLines() {
         List<String> lines = new ArrayList<>();
         try {
