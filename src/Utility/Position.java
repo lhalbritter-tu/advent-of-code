@@ -24,6 +24,12 @@ public class Position implements Comparable<Position> {
     public void addY(int y) {
         this.y += y;
     }
+    
+    public Position add(Position p) {
+        this.x += p.x;
+        this.y += p.y;
+        return this;
+    }
 
     public int x() {
         return x;
